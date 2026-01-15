@@ -3,11 +3,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
 
 const Index = () => {
   const [formData, setFormData] = useState({ name: '', contact: '', project: '' });
+  const [privacyOpen, setPrivacyOpen] = useState(false);
 
   const tools = [
     { name: "Perplexity AI", desc: "Исследования" },
@@ -378,6 +380,16 @@ const Index = () => {
                     className="border-2 border-primary/30 bg-background/50 focus:border-primary focus:shadow-[0_0_10px_rgba(0,255,255,0.3)] min-h-32 font-heading"
                   />
                 </div>
+                <div className="text-xs text-foreground/60 text-center mb-4">
+                  Нажимая кнопку, вы соглашаетесь с{' '}
+                  <button
+                    type="button"
+                    onClick={() => setPrivacyOpen(true)}
+                    className="text-primary hover:text-accent underline transition-colors"
+                  >
+                    обработкой персональных данных
+                  </button>
+                </div>
                 <Button type="submit" size="lg" className="w-full text-lg bg-primary text-background font-heading border-2 border-primary hover:bg-transparent hover:text-primary hover:shadow-[0_0_30px_rgba(0,255,255,0.5)] transition-all duration-300">
                   <Icon name="Send" className="mr-2" size={20} />
                   ОТПРАВИТЬ ЗАЯВКУ
@@ -394,8 +406,32 @@ const Index = () => {
           <div className="mt-4 text-xs text-accent font-heading">[ POWERED BY AI ]</div>
         </footer>
       </div>
+
+      <Dialog open={privacyOpen} onOpenChange={setPrivacyOpen}>
+        <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto bg-background border-2 border-primary">
+          <DialogHeader>
+            <DialogTitle className="font-heading text-2xl text-primary tracking-wider">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4 text-foreground/80 leading-relaxed">
+            <p className="text-center text-accent font-heading text-sm">[ ЗДЕСЬ БУДЕТ ВАША ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ ]</p>
+            <p>
+              Этот раздел содержит информацию об обработке персональных данных посетителей сайта.
+            </p>
+            <p>
+              Добавьте сюда текст вашей политики конфиденциальности, включая информацию о:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Какие данные собираются</li>
+              <li>Цели обработки персональных данных</li>
+              <li>Сроки хранения данных</li>
+              <li>Права субъектов персональных данных</li>
+              <li>Контактные данные оператора</li>
+            </ul>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
-};
+};}
 
 export default Index;
