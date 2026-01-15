@@ -267,6 +267,32 @@ const Index = () => {
 
         <section className="py-16 animate-fade-in">
           <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider">
+            ПОРТФОЛИО
+          </h2>
+          <div className="text-center mb-12 text-accent text-sm font-heading">[ MY WORKS ]</div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[1, 2, 3, 4, 5, 6].map((item) => (
+              <div key={item} className="group relative overflow-hidden border-2 border-primary/30 hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.4)] bg-card/30 backdrop-blur-sm aspect-video">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-accent/20 flex items-center justify-center">
+                  <div className="text-center">
+                    <Icon name="Image" size={48} className="text-primary/50 mx-auto mb-2" />
+                    <p className="text-primary/70 font-heading text-sm">ПРОЕКТ #{item}</p>
+                  </div>
+                </div>
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent to-primary"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-4">
+                  <div>
+                    <p className="text-primary font-heading text-sm mb-1">[ COMING SOON ]</p>
+                    <p className="text-foreground/70 text-xs">Фото будет загружено позже</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="py-16 animate-fade-in">
+          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider">
             ОТЗЫВЫ КЛИЕНТОВ
           </h2>
           <div className="text-center mb-12 text-accent text-sm font-heading">[ CLIENT FEEDBACK ]</div>
