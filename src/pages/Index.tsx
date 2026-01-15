@@ -47,6 +47,33 @@ const Index = () => {
     { name: "ПРЕМИУМ", price: "300 тыс. ₽", days: 21 }
   ];
 
+  const pricingDetailed = [
+    { 
+      name: "СТАРТ", 
+      price: "от 30 000 ₽", 
+      days: "7 дней", 
+      includes: "1 лендинг ИЛИ контент-план + базовая инфографика"
+    },
+    { 
+      name: "БИЗНЕС", 
+      price: "от 75 000 ₽", 
+      days: "10 дней", 
+      includes: "Лендинг + контент-план + ИИ-видео (3 шт) + инфографика"
+    },
+    { 
+      name: "ПРО", 
+      price: "от 150 000 ₽", 
+      days: "14 дней", 
+      includes: "Всё выше + ИИ-фотосессия + карточки товаров + ассистент"
+    },
+    { 
+      name: "ПРЕМИУМ", 
+      price: "от 300 000 ₽", 
+      days: "21 день", 
+      includes: "Полный пакет: лендинг + контент + видео + инфографика + фото + карточки + ассистент + аватар + песня"
+    }
+  ];
+
   const benefits = [
     "⚡ Скорость: дни вместо недель",
     "💰 Экономия: в 5-10 раз дешевле",
@@ -248,6 +275,47 @@ const Index = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 animate-fade-in">
+          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider">
+            ПАКЕТЫ УСЛУГ
+          </h2>
+          <div className="text-center mb-12 text-accent text-sm font-heading">[ DETAILED PACKAGES ]</div>
+          <div className="max-w-6xl mx-auto overflow-x-auto">
+            <div className="min-w-[800px]">
+              <div className="grid grid-cols-4 gap-px bg-primary/30 border-2 border-primary/30">
+                <div className="bg-background/95 backdrop-blur-sm p-4 font-heading text-primary text-sm uppercase tracking-wider font-bold">
+                  Пакет
+                </div>
+                <div className="bg-background/95 backdrop-blur-sm p-4 font-heading text-primary text-sm uppercase tracking-wider font-bold">
+                  Стоимость
+                </div>
+                <div className="bg-background/95 backdrop-blur-sm p-4 font-heading text-primary text-sm uppercase tracking-wider font-bold">
+                  Срок выполнения
+                </div>
+                <div className="bg-background/95 backdrop-blur-sm p-4 font-heading text-primary text-sm uppercase tracking-wider font-bold">
+                  Включает
+                </div>
+                {pricingDetailed.map((pkg, idx) => (
+                  <>
+                    <div key={`name-${idx}`} className={`bg-card/50 backdrop-blur-sm p-4 font-heading text-lg font-bold ${idx === 2 ? 'text-accent' : 'text-foreground'}`}>
+                      {pkg.name}
+                    </div>
+                    <div key={`price-${idx}`} className="bg-card/50 backdrop-blur-sm p-4 text-foreground/90 font-semibold">
+                      {pkg.price}
+                    </div>
+                    <div key={`days-${idx}`} className="bg-card/50 backdrop-blur-sm p-4 text-foreground/90">
+                      {pkg.days}
+                    </div>
+                    <div key={`includes-${idx}`} className="bg-card/50 backdrop-blur-sm p-4 text-foreground/80 text-sm leading-relaxed">
+                      {pkg.includes}
+                    </div>
+                  </>
+                ))}
+              </div>
             </div>
           </div>
         </section>
