@@ -81,10 +81,8 @@ const Index = () => {
           <div className="inline-block mb-4 px-4 py-2 border border-primary/50 bg-primary/5 backdrop-blur-sm">
             <span className="text-primary text-sm font-heading tracking-wider">[ AI-POWERED MARKETING ]</span>
           </div>
-          <h1 className="font-heading text-5xl md:text-7xl font-bold mb-6 text-primary drop-shadow-[0_0_20px_rgba(0,255,255,0.5)] leading-tight tracking-tight relative inline-block">
-            <span className="relative inline-block animate-glitch">
-              ИИ-МАРКЕТИНГ ПОД КЛЮЧ:<br/>ОТ ЛЕНДИНГА ДО ВИДЕО
-            </span>
+          <h1 className="font-heading text-5xl md:text-7xl font-bold mb-6 text-primary drop-shadow-[0_0_20px_rgba(0,255,255,0.5)] leading-tight tracking-tight">
+            ИИ-МАРКЕТИНГ ПОД КЛЮЧ:<br/>ОТ ЛЕНДИНГА ДО ВИДЕО
           </h1>
           <p className="text-xl md:text-2xl text-foreground/80 mb-10 max-w-3xl mx-auto font-medium">
             Создаю продающие лендинги, визуал, контент и видео с помощью нейросетей
@@ -102,8 +100,8 @@ const Index = () => {
         </section>
 
         <section className="py-16 animate-fade-in">
-          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider relative inline-block">
-            <span className="animate-glitch inline-block">ПЕРЕДОВЫЕ НЕЙРОСЕТИ</span>
+          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider">
+            ПЕРЕДОВЫЕ НЕЙРОСЕТИ
           </h2>
           <div className="text-center mb-12 text-accent text-sm font-heading">[ CUTTING-EDGE AI TOOLS ]</div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -173,8 +171,8 @@ const Index = () => {
         </section>
 
         <section className="py-16 animate-fade-in">
-          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider relative inline-block">
-            <span className="animate-glitch inline-block">ЧТО Я СОЗДАЮ</span>
+          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider">
+            ЧТО Я СОЗДАЮ
           </h2>
           <p className="text-center text-accent mb-12 text-sm font-heading">
             [ FULL CYCLE AI MARKETING ]</p>
@@ -195,8 +193,8 @@ const Index = () => {
         </section>
 
         <section className="py-16 animate-fade-in">
-          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider relative inline-block">
-            <span className="animate-glitch inline-block">КАК ПРОХОДИТ РАБОТА</span>
+          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider">
+            КАК ПРОХОДИТ РАБОТА
           </h2>
           <div className="text-center mb-12 text-accent text-sm font-heading">[ 4-STEP PROCESS ]</div>
           <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -225,8 +223,8 @@ const Index = () => {
         <section className="py-16 animate-fade-in relative">
           <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 backdrop-blur-sm"></div>
           <div className="relative">
-            <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider relative inline-block">
-              <span className="animate-glitch inline-block">ТАРИФЫ</span>
+            <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider">
+              ТАРИФЫ
             </h2>
             <div className="text-center mb-12 text-accent text-sm font-heading">[ PRICING PLANS ]</div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto px-6">
@@ -253,8 +251,8 @@ const Index = () => {
         </section>
 
         <section className="py-16 animate-fade-in">
-          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider relative inline-block">
-            <span className="animate-glitch inline-block">ПОЧЕМУ ЭТО ВЫГОДНО</span>
+          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider">
+            ПОЧЕМУ ЭТО ВЫГОДНО
           </h2>
           <div className="text-center mb-12 text-accent text-sm font-heading">[ KEY BENEFITS ]</div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
@@ -268,8 +266,8 @@ const Index = () => {
         </section>
 
         <section className="py-16 animate-fade-in">
-          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider relative inline-block">
-            <span className="animate-glitch inline-block">ОТЗЫВЫ КЛИЕНТОВ</span>
+          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider">
+            ОТЗЫВЫ КЛИЕНТОВ
           </h2>
           <div className="text-center mb-12 text-accent text-sm font-heading">[ CLIENT FEEDBACK ]</div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -295,8 +293,8 @@ const Index = () => {
         </section>
 
         <section className="py-16 animate-fade-in max-w-3xl mx-auto">
-          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider relative inline-block">
-            <span className="animate-glitch inline-block">ЧАСТЫЕ ВОПРОСЫ</span>
+          <h2 className="font-heading text-4xl font-bold text-center mb-2 text-primary tracking-wider">
+            ЧАСТЫЕ ВОПРОСЫ
           </h2>
           <div className="text-center mb-12 text-accent text-sm font-heading">[ FAQ ]</div>
           <Accordion type="single" collapsible className="space-y-4">
@@ -321,8 +319,8 @@ const Index = () => {
               <div className="inline-block mb-4 px-4 py-1 border border-accent/50 bg-accent/5">
                 <span className="text-accent text-xs font-heading tracking-widest">[ CONTACT FORM ]</span>
               </div>
-              <CardTitle className="font-heading text-3xl mb-2 text-primary tracking-wider relative inline-block">
-                <span className="animate-glitch inline-block">ГОТОВЫ ЗАПУСТИТЬ ПРОЕКТ?</span>
+              <CardTitle className="font-heading text-3xl mb-2 text-primary tracking-wider">
+                ГОТОВЫ ЗАПУСТИТЬ ПРОЕКТ?
               </CardTitle>
               <CardDescription className="text-lg text-foreground/80 font-medium">
                 Бесплатный аудит ниши и план работ
