@@ -432,6 +432,6 @@ const Index = () => {
       </Dialog>
     </div>
   );
-};}
+};
 
 export default Index;
